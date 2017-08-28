@@ -7,4 +7,4 @@ class NewBoxInside extends React.Component {
   }
 }
 
-ReactDOM.render(<NewBoxInside />, document.getElementById('jocke'));
+ReactDOM.render(<NewBoxInside />, document.getElementById('jocker'));
