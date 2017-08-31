@@ -3,13 +3,17 @@
   <link rel="stylesheet" type="text/css" href="css/css.css">
 </head>
 <body ng-app="myFirstApp">
-  <div class="jocker" ng-controller='Main-controller'>
+  <div class="jocker" ng-controller="Main-controller">
     <ul class="picker">
       <li>Box1</li>
       <li>Box{{1+1}}</li>
-      <li>Box3</li>
+      <li>Box3 {{promo}} </li>
       <li>Box4</li>
-      <h1>{{title}}<h1>
+     <li> <h1>{{title}}<h1>
+        <p class="nameBook">{{product.name | uppercase}}</p>
+     </li>
+       <li class="priceBook">{{product.price | currency }}</li>
+       <li class="dateBook">{{product.pubdate | date}}</li>
     </ul>
   </div>
 <div class="newclass">New catalog Ship</div>
