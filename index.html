@@ -2,39 +2,24 @@
 <head>
   <link rel="stylesheet" type="text/css" href="css/css.css">
 </head>
-<body>
-  <div class="jocker">
+<body ng-app="myFirstApp">
+  <div class="jocker" ng-controller='Main-controller'>
     <ul class="picker">
       <li>Box1</li>
       <li>Box2</li>
       <li>Box3</li>
       <li>Box4</li>
+      <h1>{{title}}<h1>
     </ul>
   </div>
 <div class="newclass">New catalog Ship</div>
-  <script src="js/temp.js"></script>
+  
+  
+<!-- Temp -->  
+<script src="js/temp.js"></script>
+<!-- Module -->
+<script src="js/app.js"></script>
+<!-- Controller -->
+<script src="js/controllers/myController.js"></script>
 </body>
 </html>
----
-layout: default
----
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
