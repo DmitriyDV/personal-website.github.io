@@ -12,11 +12,13 @@
       <li>Box{{1+1}}</li>
       <li>Box3 {{promo}} </li>
       <li>Box4</li>
+      <div ng-repeat="product in product">
      <li> <h1>{{title}}<h1>
         <p class="nameBook">{{product.name | uppercase}}</p>
      </li>
        <li class="priceBook">{{product.price | currency }}</li>
        <li class="dateBook">{{product.pubdate | date}}</li>
+       </div>
     </ul>
   </div>
 <div class="newclass">New catalog Ship</div>
