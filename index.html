@@ -7,29 +7,11 @@
 </head>
 <body ng-app="myFirstApp">
   <div class="jocker" ng-controller="MainController">
-    <ul class="picker">
-      <li>Box1</li>
-      <li>Box{{1+1}}</li>
-      <li>Box3 {{promo}} </li>
-      <li>Box4</li>
-      <div ng-repeat="product in products">
-     <li>Just same text one <h1>{{title}}<h1>
-        <p class="nameBook">{{product.name | uppercase}}</p>
-     </li>
-       <li class="priceBook">Same symbol two {{product.price | currency }}</li>
-       <li class="dateBook">Something about three {{product.pubdate | date}}</li>
-       <img ng-src="{{product.cover}}">
-       <div class="rating"> 
-  <p class="likes" ng-click="plusOne($index)">Likes: + {{product.likes}}</p> 
-</div>
-       </div>
-    </ul>
+    <div>
+      Install APP I
+    </div>
   </div>
-<div class="newclass">New catalog Ship</div>
-  
-  
-<!-- Temp   
-<script src="js/temp.js"></script> -->
+
 <!-- Module -->
 <script src="js/app.js"></script>
 <!-- Controller -->
