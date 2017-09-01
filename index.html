@@ -13,14 +13,14 @@
       <li>Box3 {{promo}} </li>
       <li>Box4</li>
       <div ng-repeat="product in products">
-     <li> <h1>{{title}}<h1>
+     <li>Just same text one <h1>{{title}}<h1>
         <p class="nameBook">{{product.name | uppercase}}</p>
      </li>
-       <li class="priceBook">{{product.price | currency }}</li>
-       <li class="dateBook">{{product.pubdate | date}}</li>
+       <li class="priceBook">Same symbol two {{product.price | currency }}</li>
+       <li class="dateBook">Something about three {{product.pubdate | date}}</li>
        <img ng-src="{{product.cover}}">
        <div class="rating"> 
-  <p class="likes" ng-click="plusOne($index)">+ {{product.likes}}</p> 
+  <p class="likes" ng-click="plusOne($index)">Likes: + {{product.likes}}</p> 
 </div>
        </div>
     </ul>
