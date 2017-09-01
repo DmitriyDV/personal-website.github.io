@@ -19,6 +19,9 @@
        <li class="priceBook">{{product.price | currency }}</li>
        <li class="dateBook">{{product.pubdate | date}}</li>
        <img ng-src="{{product.cover}}">
+       <div class="rating"> 
+  <p class="likes" ng-click="plusOne($index)">+ {{product.likes}}</p> 
+</div>
        </div>
     </ul>
   </div>
