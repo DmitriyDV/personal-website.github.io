@@ -1,4 +1,7 @@
 app.controller('MainController', ['$scope', function($scope) { 
+  $scope.justSimple = function (tempB) {
+    $scope.products[tempB].price = $scope.products[tempB+1].price;
+  }
   $scope.title = 'Top Some Books!'; 
   $scope.promo = 'Just!';
   $scope.products = [ 
