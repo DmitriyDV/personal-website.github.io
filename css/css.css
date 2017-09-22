@@ -1,10 +1,8 @@
-div {background-color:red;border:2px solid black;}
+
 .jocker{color:yellow; font-size:12px;}
 ul li {padding:10px 20px;border:2px solid white;}
 .newClass {margin:15px; color:green; }
-* {
-    border: 1px solid red !important;
-}
+
 
 * {
     -webkit-box-sizing: border-box;
@@ -82,5 +80,4 @@ ul li {padding:10px 20px;border:2px solid white;}
 
 #map {
   heigh:100%;
-	border:7px solid black;
 }
