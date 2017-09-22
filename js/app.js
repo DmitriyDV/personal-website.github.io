@@ -10,6 +10,8 @@ function initMap() {
   });
 }
 
+initMap();
+
 var app = angular.module("myFirstApp", []);
 //insert Google map
 var map;
